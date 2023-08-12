@@ -1,0 +1,23 @@
+x=int(input("Nhập số cần tính giai thừa:"))
+def fact(x):
+    if x == 0:
+        return 1
+    return x * fact(x - 1)
+print (fact(x))
+values=input("Nhập vào các giá trị:")
+l=values.split(",")
+t=tuple(l)
+print (l)
+print (t)
+class InputOutString(object):
+   def __init__(self):
+       self.s = ""
+
+   def getString(self):
+       self.s = input("Nhập chuỗi:")
+   def printString(self):
+       print (self.s.upper())
+
+strObj = InputOutString()
+strObj.getString()
+strObj.printString()
